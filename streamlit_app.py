@@ -20,7 +20,7 @@ with st.expander("Data"):
   y_raw
 with st.expander('Data Visulization'):
   # "bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
-  st.scatter_chart(data = df, x ='age', y = 'gender', color = 'species')
+  st.scatter_chart(data = df, x ='age', y = 'gender', color = 'blue')
 
 # # Input Features
 # with st.sidebar:
