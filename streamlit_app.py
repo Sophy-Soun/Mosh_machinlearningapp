@@ -9,15 +9,15 @@ st.title('The Machine Learning App')
 
 with st.expander("Data"):
   st.write('**Raw Data**')
-  st.write('This the machine learning app for prediction the people like music')
+  st.write('The raw data about the people who like music follow the gender and age')
   df = pd.read_csv('https://raw.githubusercontent.com/mosh-hamedani/python-supplementary-materials/refs/heads/main/music.csv')
   df
-#   st.write('**X**')
-#   X_raw = df.drop('species', axis=1)
-#   X_raw
-#   st.write('**y**')
-#   y_raw = df.species
-#   y_raw
+  st.write('**X**')
+  X_raw = df.drop('genre', axis=1)
+  X_raw
+  st.write('**y**')
+  y_raw = df.genre
+  y_raw
 # with st.expander('Data Visulization'):
 #   # "bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
 #   st.scatter_chart(data = df, x ='bill_length_mm', y = 'body_mass_g', color = 'species')
