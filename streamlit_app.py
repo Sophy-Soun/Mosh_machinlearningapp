@@ -5,11 +5,11 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 
 
-st.title('My Machine Learning App')
+st.title('The Machine Learning App')
 
 with st.expander("Data"):
   st.write('**Raw Data**')
-  st.write('This the machine learning app')
+  st.write('This the machine learning app for prediction the people like music')
   df = pd.read_csv('https://raw.githubusercontent.com/mosh-hamedani/python-supplementary-materials/refs/heads/main/music.csv')
   df
 #   st.write('**X**')
