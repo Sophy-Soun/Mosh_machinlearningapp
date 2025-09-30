@@ -25,7 +25,7 @@ with st.expander("Data"):
 # Input Features
 with st.sidebar:
   st.header('Input Features')
-  age = st.slider('Age (year)',20,5, 35)
+  age = st.slider('Age (year)',20,20, 35)
   gender = st.selectbox('Gender', ('male', 'female'))
 
 # # Create the DataFrame for input features
